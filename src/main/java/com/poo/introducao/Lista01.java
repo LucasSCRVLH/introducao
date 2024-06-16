@@ -98,7 +98,31 @@ public class Lista01 {
 
         
 
-      System.out.println("O valor por m² é R$" + " " + valor+"," + " " + "Seu terreno é de:"+ " " + area +"m²,"+ " " + "Sendo assim, o valor calculado é de R$:" + " " + precoterreno);
+      System.out.println("O valor por m² é R$" + " " + valor+"," + " " + "Seu terreno é de:"+ " " + area +"m²,"+ " " + "Sendo assim, o valor calculado é de R$:" + " " +precoterreno);
+
+
+    }
+    static void ex6(){
+
+      Float km;
+      Float litros;
+      Float resultado;
+
+      System.out.println("Escreva a distância percorrida em KMs pelo seu veículo:");
+
+      Scanner sc = new Scanner(System.in);
+      km =  sc.nextFloat();
+
+      System.out.println("Escreva o consumo em litros do seu veículo durante o percurso:");
+
+      litros = sc.nextFloat();
+
+
+      resultado = km / litros;
+
+      System.out.println("O consumo médio do seu veículo é:" + " " + resultado + " " + " Km/L");
+
+
 
 
     }
