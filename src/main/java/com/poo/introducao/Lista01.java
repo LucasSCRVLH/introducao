@@ -157,5 +157,22 @@ public class Lista01 {
       System.out.println("Sua média é:" + " " + media);
    
    }
+
+   static void ex8(){
+
+      Float celcius;
+      Float fahrenheit; 
+
+      System.out.println("Escreva a temperatura em Celcius para converter em Fahrenheit:");
+
+      Scanner sc = new Scanner(System.in);
+
+      celcius = sc.nextFloat();
+
+      fahrenheit = (celcius * 9 / 5) + 32;
+
+      System.out.println("O valor convertido é:" + " " + fahrenheit);
+
+   }
      
 }
