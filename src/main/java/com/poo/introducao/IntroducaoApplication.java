@@ -13,6 +13,7 @@ public class IntroducaoApplication {
 		Lista01.ex2();
 		Lista01.ex3();
 		Lista01.ex4();
+		Lista01.ex5();
 	}
 
 }

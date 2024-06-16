@@ -18,7 +18,7 @@ public class Lista01 {
 
         res = num1 + num2;
 
-        System.out.println("A soma é:" + res);
+        System.out.println("A soma é:" + " "+ res);
      }
 
      static void ex2(){
@@ -72,7 +72,35 @@ public class Lista01 {
 
       System.out.println("Você escolheu o número:" + numeroescolhido + " " + "Seu antecessor é:" + " " + antecessor + " " + "e o sucessor é:" + " " + sucessor);
 
+    }
+      
+      static void ex5(){   
 
-     }
+      Float largura;
+      Float comprimento;
+      Float area;
+      int valor = 150;
+      Float precoterreno;
+      
+      System.out.println("Digite a largura do terreno em metros:");
+      
+      Scanner sc = new Scanner (System.in);
+
+      largura = sc.nextFloat();
+
+      System.out.println("Digite o comprimento do terreno em metros:");
+
+      comprimento = sc.nextFloat();
+
+      area = largura * comprimento;
+
+      precoterreno = area * valor;
+
+        
+
+      System.out.println("O valor por m² é R$" + " " + valor+"," + " " + "Seu terreno é de:"+ " " + area +"m²,"+ " " + "Sendo assim, o valor calculado é de R$:" + " " + precoterreno);
+
+
+    }
      
 }
