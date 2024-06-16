@@ -20,4 +20,43 @@ public class Lista01 {
 
         System.out.println("A soma é:" + res);
      }
+
+     static void ex2(){
+      String nome;
+      String sobrenome;
+
+      System.out.println("Escreva seu nome:");
+      
+      Scanner sc = new Scanner (System.in);
+
+      nome = sc.nextLine();
+
+      System.out.println("Digite seu sobrenome:");
+
+      sobrenome = sc.nextLine();
+
+      System.out.println("Seu nome é:" + nome + sobrenome);      
+     }
+
+     static void ex3(){
+
+      Float dolar;
+      Float real;
+
+      System.out.println("Escreva um valor em Reais para converter em Dólar:");  
+
+      Scanner sc = new Scanner (System.in);
+
+      
+
+
+
+
+
+
+
+
+
+     }
+     
 }
