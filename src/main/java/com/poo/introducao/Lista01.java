@@ -122,9 +122,40 @@ public class Lista01 {
 
       System.out.println("O consumo médio do seu veículo é:" + " " + resultado + " " + " Km/L");
 
+   }
+   static void ex7(){
 
+      Float nota01;
+      Float nota02;
+      Float nota03;
+      Float nota04;
+      Float media;
 
+      System.out.println("Digite a primeira nota:");
+      
+      Scanner sc = new Scanner(System.in);
 
-    }
+      nota01 =  sc.nextFloat();
+
+      System.out.println("Digite a segunda nota:");
+      
+      
+      nota02 =  sc.nextFloat();
+
+      System.out.println("Digite a terceira nota:");
+      
+      
+      nota03 =  sc.nextFloat();
+
+      System.out.println("Digite a quarta nota:");
+      
+     
+      nota04 =  sc.nextFloat();
+
+      media = nota01 + nota02 + nota03 + nota04 / 4;
+
+      System.out.println("Sua média é:" + " " + media);
+   
+   }
      
 }
