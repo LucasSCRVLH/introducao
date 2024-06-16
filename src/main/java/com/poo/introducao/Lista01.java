@@ -51,23 +51,26 @@ public class Lista01 {
 
       result = real / dolar;
 
-      System.out.println("O valor convertido em Reais é:" + result);
+      System.out.println("O valor convertido em Reais é:"+ " "+ result);
 
-      
+     }
 
+     static void ex4(){
 
+      int numeroescolhido;
+      int antecessor;
+      int sucessor;
 
+      System.out.println("Digite um número para saber seu sucessor e antecessor");
 
+      Scanner sc = new Scanner (System.in);
 
+      numeroescolhido = sc.nextInt();
 
-      
+      antecessor = numeroescolhido - 1;
+      sucessor = numeroescolhido + 1;
 
-
-
-
-
-
-
+      System.out.println("Você escolheu o número:" + numeroescolhido + " " + "Seu antecessor é:" + " " + antecessor + " " + "e o sucessor é:" + " " + sucessor);
 
 
      }
