@@ -35,17 +35,30 @@ public class Lista01 {
 
       sobrenome = sc.nextLine();
 
-      System.out.println("Seu nome é:" + nome + sobrenome);      
+      System.out.println("Seu nome é:" + nome + " "+ sobrenome);      
      }
 
      static void ex3(){
 
-      Float dolar;
-      Float real;
+      Double dolar = 5.25;
+      Double real;
+      Double result;
 
       System.out.println("Escreva um valor em Reais para converter em Dólar:");  
 
-      Scanner sc = new Scanner (System.in);
+      Scanner sc = new Scanner (System.in);  
+      real = sc.nextDouble();
+
+      result = real / dolar;
+
+      System.out.println("O valor convertido em Reais é:" + result);
+
+      
+
+
+
+
+
 
       
 

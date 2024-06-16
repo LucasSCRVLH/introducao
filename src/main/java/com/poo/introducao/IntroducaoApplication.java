@@ -7,11 +7,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class IntroducaoApplication {
 
 	public static void main(String[] args) {
-		Lista01 lista = new Lista01();
 		
 		SpringApplication.run(IntroducaoApplication.class, args);
 		Lista01.ex1();
 		Lista01.ex2();
+		Lista01.ex3();
 	}
 
 }
