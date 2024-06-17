@@ -19,7 +19,8 @@ public class Lista01 {
         res = num1 + num2;
 
         System.out.println("A soma é:" + " "+ res);
-     }
+        sc.close();
+      }
 
      static void ex2(){
       String nome;
@@ -36,7 +37,9 @@ public class Lista01 {
       sobrenome = sc.nextLine();
 
       System.out.println("Seu nome é:" + nome + " "+ sobrenome);      
-     }
+      sc.close();
+   
+   }
 
      static void ex3(){
 
@@ -52,7 +55,7 @@ public class Lista01 {
       result = real / dolar;
 
       System.out.println("O valor convertido em Reais é:"+ " "+ result);
-
+      sc.close();
      }
 
      static void ex4(){
@@ -71,7 +74,7 @@ public class Lista01 {
       sucessor = numeroescolhido + 1;
 
       System.out.println("Você escolheu o número:" + numeroescolhido + " " + "Seu antecessor é:" + " " + antecessor + " " + "e o sucessor é:" + " " + sucessor);
-
+      sc.close();
     }
       
       static void ex5(){   
@@ -99,7 +102,7 @@ public class Lista01 {
         
 
       System.out.println("O valor por m² é R$" + " " + valor+"," + " " + "Seu terreno é de:"+ " " + area +"m²,"+ " " + "Sendo assim, o valor calculado é de R$:" + " " +precoterreno);
-
+      sc.close();   
 
     }
     static void ex6(){
@@ -121,7 +124,7 @@ public class Lista01 {
       resultado = km / litros;
 
       System.out.println("O consumo médio do seu veículo é:" + " " + resultado + " " + " Km/L");
-
+      sc.close();
    }
    static void ex7(){
 
@@ -155,7 +158,7 @@ public class Lista01 {
       media = nota01 + nota02 + nota03 + nota04 / 4;
 
       System.out.println("Sua média é:" + " " + media);
-   
+      sc.close();
    }
 
    static void ex8(){
@@ -172,7 +175,7 @@ public class Lista01 {
       fahrenheit = (celcius * 9 / 5) + 32;
 
       System.out.println("O valor convertido é:" + " " + fahrenheit);
-
+     sc.close();
    }
      
 }
