@@ -154,7 +154,10 @@ public class Lista02 {
         }
         } sc.close();
 
-    }static void ex7(){
+    }
+    
+    static void ex7(){
+       
         Scanner sc = new Scanner(System.in);
         int NumeroPrimeiro;
         int numeroSegundo;
@@ -172,8 +175,54 @@ public class Lista02 {
         System.out.println(NumeroPrimeiro + " "+"Não é divisível por"+ " " + numeroSegundo);
         } sc.close();
      
+    }  
+
+    static void ex8(){
+    Scanner sc = new Scanner(System.in);
+    
+    String[][] perguntas = {
+        {"Qual é a capital do Brasil?", "a) São Paulo", "b) Rio de Janeiro", "c) Brasília", "d) Belo Horizonte", "c"},
+        {"Quem pintou a Mona Lisa?", "a) Pablo Picasso", "b) Leonardo da Vinci", "c) Vincent van Gogh", "d) Michelangelo", "b"},
+        {"Qual é o maior planeta do Sistema Solar?", "a) Marte", "b) Júpiter", "c) Saturno", "d) Vênus", "b"},
+        {"Quem escreveu 'Dom Quixote'?", "a) Miguel de Cervantes", "b) William Shakespeare", "c) Franz Kafka", "d) Machado de Assis", "a"},
+        {"Qual é o símbolo químico do ouro?", "a) Au", "b) Ag", "c) Fe", "d) Cu", "a"}
+         };
+
+        int erros = 0;
+        int acertos = 0;
+        for (int i = 0; i < perguntas.length; i++) {
+            String[] pergunta = perguntas[i];
+            System.out.println("Pergunta " + (i + 1) + ": " + pergunta[0]);
+            
+        for (int j = 1; j < pergunta.length - 1; j++) {
+            System.out.println(pergunta[j]);
+         }
+            System.out.print("Digite a opção correta (a, b, c ou d): ");
+           
+            String respostaUsuario = sc.nextLine().toLowerCase();
+            
+            
+        if (respostaUsuario.equals(pergunta[pergunta.length - 1])) {
+        System.out.println("Resposta correta!\n");
+        acertos++;
+        } else {
+            System.out.println("Resposta incorreta!\n");
+            erros++;
+            if (erros == 3) {
+            System.out.println("Você errou 3 vezes! Fim de jogo.");
+             break;
+            }
+            }
+        } if (erros < 3) {
+            System.out.println("Parabéns! Você completou o jogo.");
+            System.out.println("Número de acertos: " + acertos);
+        }sc.close();
     }
 
 
+
 }
+  
+
+
 
