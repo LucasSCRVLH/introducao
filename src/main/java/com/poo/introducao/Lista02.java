@@ -120,7 +120,58 @@ public class Lista02 {
         } else {
             System.out.println("Login e senha incorretos. Verifique as informações digitadas.");
         }
+        } sc.close();
+    }
+    
+    static void ex6(){
+     Scanner sc = new Scanner(System.in);
+
+     System.out.print("Digite a nota da primeira prova: ");
+        double nota1 = sc.nextDouble();
+
+        System.out.print("Digite a nota da segunda prova: ");
+        double nota2 = sc.nextDouble();
+
+        
+        if (nota1 > 6 && nota2 > 6) {
+            System.out.println("Parabéns! Você está aprovado.");
+        } else {
+            
+            System.out.print("Digite a nota de recuperação: ");
+            double notaRecuperacao = sc.nextDouble();
+
+            
+        if (nota1 <= nota2) {
+        nota1 = notaRecuperacao;
+        } else {
+         nota2 = notaRecuperacao;
         }
+         double media = (nota1 + nota2) / 2;
+         if (media >= 6) {
+         System.out.println("Parabéns! Você está aprovado com a recuperação.");
+        } else {
+        System.out.println("Infelizmente, você está reprovado!");         
+        }
+        } sc.close();
+
+    }static void ex7(){
+        Scanner sc = new Scanner(System.in);
+        int NumeroPrimeiro;
+        int numeroSegundo;
+        
+        System.out.println("Escreva o primeiro número: ");
+        NumeroPrimeiro = sc.nextInt();
+        
+        System.out.println("Escreva o segundo número: ");
+        numeroSegundo = sc.nextInt();
+        
+        if(NumeroPrimeiro % numeroSegundo == 0){
+            System.out.println(NumeroPrimeiro + " "+"É divisível por"+ " " + numeroSegundo);
+        } else{
+    
+        System.out.println(NumeroPrimeiro + " "+"Não é divisível por"+ " " + numeroSegundo);
+        } sc.close();
+     
     }
 
 
