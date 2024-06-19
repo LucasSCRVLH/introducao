@@ -49,6 +49,41 @@ public class Lista02 {
         }
     }
 
+     void ex3(){
+    
+        Scanner sc = new Scanner(System.in);
+        int idade;
+        String gestante  ;
+        String deficiente ;
+
+        System.out.println("Seja bem vindo ao nosso atendimento, responda o questionário abaixo:");
+        System.out.println("Digite sua idade:");
+
+        idade = sc.nextInt();
+         
+        System.out.println("Vamos presseguir!");
+        
+        System.out.println("Possui alguma deficiência?");
+        sc.nextLine();
+        deficiente = sc.nextLine();
+        
+        System.out.println("Está em gestação?");
+        gestante = sc.nextLine();
+    
+        if(idade < 65 &&  !gestante.equalsIgnoreCase("sim")  &&  !deficiente.equalsIgnoreCase("sim") ){
+            System.out.println("Sua fila será comum!");
+
+        }else{
+            System.out.println("Sua fila será preferencial");
+        }
+
+     }
+     static void ex4(){
+
+
+
+     }
+
 
 }
 
