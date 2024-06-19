@@ -94,11 +94,34 @@ public class Lista02 {
             System.out.println("Você é maior de idade. Pode entrar normalmente!");
             sc.close();
         }
-
-
-
-
      }
+     static void ex5(){
+
+        String login = "lucas";
+        String senha = "12345";
+        Scanner sc = new Scanner(System.in);
+        Boolean acessoPermitido = false;
+        
+
+        while (!acessoPermitido) {
+        System.out.print("Digite o login: ");
+         String loginDigitado = sc.nextLine();
+        
+        System.out.print("Digite a senha: ");
+        String senhaDigitada = sc.nextLine();
+    
+         if (loginDigitado.equals(login) && senhaDigitada.equals(senha)) {
+            System.out.println("Login e senha corretos. Acesso permitido!");
+            acessoPermitido = true;
+        } else if (!loginDigitado.equals(login) && senhaDigitada.equals(senha)) {
+            System.out.println("Login incorreto. Verifique o login digitado.");
+        } else if (loginDigitado.equals(login) && !senhaDigitada.equals(senha)) {
+            System.out.println("Senha incorreta. Verifique a senha digitada.");
+        } else {
+            System.out.println("Login e senha incorretos. Verifique as informações digitadas.");
+        }
+        }
+    }
 
 
 }
