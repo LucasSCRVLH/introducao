@@ -75,10 +75,26 @@ public class Lista02 {
 
         }else{
             System.out.println("Sua fila será preferencial");
-        }
+        } sc.close();
 
      }
      static void ex4(){
+         int idade;
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Seja bem vindo, por favor informe sua idade:");
+        idade = sc.nextInt();
+
+        if(idade<16){
+            System.out.println("Você não pode participar do evento. Idade insuficiente!");
+
+        }else if( idade ==16 || idade == 17 ){
+            System.out.println("Somente acompanhado pelo responsável!");
+        }else{
+            System.out.println("Você é maior de idade. Pode entrar normalmente!");
+            sc.close();
+        }
+
 
 
 
