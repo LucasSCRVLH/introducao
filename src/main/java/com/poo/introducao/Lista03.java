@@ -67,7 +67,7 @@ public class Lista03 {
     System.out.println("Números pares entre " + menor + " e " + maior + ":");
     for (int i = menor; i <= maior; i++) {
         if (i % 2 == 0) {System.out.println(i);
-     } sc.close();
+        } sc.close();
      }
 
 }   
@@ -102,9 +102,109 @@ while (true) {
         }
     }
     }sc.close();
-}
+    }
+    static void ex5(){
+     Scanner sc = new Scanner(System.in);
+
+     String loginCorreto = "usuario";
+     String senhaCorreta = "senha123";
+
+    int tentativas = 0;
+    boolean acessoBloqueado = false;
+
+    while (tentativas < 3) {
+       
+        System.out.print("Digite o login: ");
+        String login = sc.nextLine();
+
+        System.out.print("Digite a senha: ");
+        String senha = sc.nextLine();
+
+        
+        if (login.equals(loginCorreto) && senha.equals(senhaCorreta)) {
+            System.out.println("Login efetuado com sucesso!");
+            break; 
+        } else {
+            tentativas++;
+            if (tentativas < 3) {
+                if (!login.equals(loginCorreto) && !senha.equals(senhaCorreta)) {
+                    System.out.println("Login e senha incorretos. Tente novamente.");
+                } else if (!login.equals(loginCorreto)) {
+                    System.out.println("Login incorreto. Tente novamente.");
+                } else {
+                    System.out.println("Senha incorreta. Tente novamente.");
+                }
+            } else { 
+                System.out.println("Última tentativa, mais um erro e seu acesso será bloqueado!");
+            }
+        }
+    }
+        if (tentativas == 3) {
+        System.out.println("Acesso bloqueado!");
+    }sc.close();
+
+    }  
+
+    static void ex6(){
+    Scanner sc = new Scanner(System.in);
+    
+    System.out.print("Digite o número de andares da pirâmide: ");
+    int numAndares = sc.nextInt();
+    for (int i = 1; i <= numAndares; i++) {
+        
+        for (int j = 1; j <= numAndares - i; j++) {
+            System.out.print(" ");
+        }
+        
+        for (int k = 1; k <= 2 * i - 1; k++) {
+            System.out.print("*");
+        }
+        System.out.println();
+    }sc.close();
+
+    }
+    
 
 
 
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
