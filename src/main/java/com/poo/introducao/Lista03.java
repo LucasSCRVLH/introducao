@@ -1,6 +1,6 @@
 package com.poo.introducao;
 import java.util.Scanner;
-import java.util.Random;
+import java.util.Random; 
 public class Lista03 {
 
     static void ex1(){
@@ -110,7 +110,7 @@ while (true) {
      String senhaCorreta = "senha123";
 
     int tentativas = 0;
-    boolean acessoBloqueado = false;
+   
 
     while (tentativas < 3) {
        
